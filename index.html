@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Chaparro - WordPress QA Automation Engineer</title>
+    <link rel="icon" type="image/x-icon" href="rocket.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -989,7 +990,7 @@ html {
                                 <span class="text-gray-300">Time Management</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-graduation-cap text-blue-400 mr-3"></i>
+                                <i class="fas fas fa-rocket text-blue-400 mr-3"></i>
                                 <span class="text-gray-300">Fast Learning</span>
                             </div>
                         </div>
@@ -1001,15 +1002,7 @@ html {
                     <div class="profile-photo-container">
                         <div class="photo-frame">
                             <div class="photo-inner">
-                                <div class="photo-placeholder">
-                                    <div class="photo-icon">
-                                        <i class="fas fa-user-circle"></i>
-                                    </div>
-                                    <div class="photo-text">
-                                        <p class="font-medium">Your Photo Here</p>
-                                        <p class="text-sm opacity-60">Professional headshot recommended</p>
-                                    </div>
-                                </div>
+                                <img src="profile.jpg" alt="Eduardo Chaparro Photo" class="w-full h-full object-cover rounded-xl">
                             </div>
                             <!-- Floating decorations around photo -->
                             <div class="photo-decorations">
@@ -1115,7 +1108,7 @@ html {
                         <span class="skill-tag text-white text-xs px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">Selenium</span>
                         <span class="skill-tag text-white text-xs px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">Python</span>
                         <span class="skill-tag text-white text-xs px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">Snowflake</span>
-                        <span class="skill-tag text-white text-xs px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">CI/CD</span>
+                        <span class="skill-tag text-white text-xs px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">CI/CD (Github Actions, Jenkins)</span>
                     </div>
                 </div>
                 
@@ -1262,9 +1255,9 @@ html {
                 <div class="project-showcase">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
                         <div class="project-info">
-                            <h3 class="text-3xl font-bold text-blue-400 mb-4">WordPress QA Automation Framework</h3>
+                            <h3 class="text-3xl font-bold text-blue-400 mb-4">WordPress QA Automation Testing Suite</h3>
                             <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                                Developed automated test cases to validate WordPress releases at GoBankingRates, ensuring high-quality deployments with minimal regressions using Selenium and Python.
+                                Developed automated test cases to validate WordPress releases at GoBankingRates and CardCritics sites, ensuring high-quality deployments with minimal regressions using Selenium, JavaScript, PHP and Python.
                             </p>
                             
                             <!-- Technical Implementation -->
@@ -1368,6 +1361,8 @@ html {
                                 <ul class="space-y-2 text-gray-300">
                                     <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Payment tokenization system</li>
                                     <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Webhook integration</li>
+                                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> 3D Secure</li>
+                                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Multicurrency</li>
                                     <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Transaction processing optimization</li>
                                     <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Merchant support & troubleshooting</li>
                                 </ul>
@@ -1394,41 +1389,48 @@ html {
             
             <div class="max-w-4xl lg:max-w-7xl mx-auto">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    <!-- Email -->
-                    <div class="contact-method glass-card">
-                        <div class="flex items-center gap-4 mb-3">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope text-blue-400"></i>
-                            </div>
-                            <h4 class="font-semibold text-gray-200">Email</h4>
-                        </div>
-                        <a href="mailto:alire.eduardo@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors break-all ml-16">
-                            alire.eduardo@gmail.com
-                        </a>
-                    </div>
-                    
-                    <!-- LinkedIn -->
-                    <div class="contact-method glass-card">
-                        <div class="flex items-center gap-4 mb-3">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin text-blue-400"></i>
-                            </div>
-                            <h4 class="font-semibold text-gray-200">LinkedIn</h4>
-                        </div>
-                        <p class="text-gray-400 ml-16">Eduardo Chaparro</p>
-                    </div>
-                    
-                    <!-- GitHub -->
-                    <div class="contact-method glass-card">
-                        <div class="flex items-center gap-4 mb-3">
-                            <div class="contact-icon">
-                                <i class="fab fa-github text-blue-400"></i>
-                            </div>
-                            <h4 class="font-semibold text-gray-200">GitHub</h4>
-                        </div>
-                        <p class="text-gray-400 ml-16">Eduardo Chaparro</p>
-                    </div>
-                </div>
+  
+  <!-- Email -->
+  <div class="contact-method glass-card hover:bg-gray-800 transition-colors p-4 rounded-lg cursor-pointer">
+    <a href="mailto:alire.eduardo@gmail.com" class="block h-full">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="contact-icon">
+          <i class="fas fa-envelope text-blue-400"></i>
+        </div>
+        <h4 class="font-semibold text-gray-200">Email</h4>
+      </div>
+      <p class="text-gray-400 break-all ml-16">alire.eduardo@gmail.com</p>
+    </a>
+  </div>
+
+  <!-- LinkedIn -->
+  <div class="contact-method glass-card hover:bg-gray-800 transition-colors p-4 rounded-lg cursor-pointer">
+    <a href="https://www.linkedin.com/in/eduardo-chaparro" target="_blank" rel="noopener noreferrer" class="block h-full">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="contact-icon">
+          <i class="fab fa-linkedin text-blue-400"></i>
+        </div>
+        <h4 class="font-semibold text-gray-200">LinkedIn</h4>
+      </div>
+      <p class="text-gray-400 ml-16">Eduardo Chaparro</p>
+    </a>
+  </div>
+
+  <!-- GitHub -->
+  <div class="contact-method glass-card hover:bg-gray-800 transition-colors p-4 rounded-lg cursor-pointer">
+    <a href="https://github.com/eduardo-chaparro" target="_blank" rel="noopener noreferrer" class="block h-full">
+      <div class="flex items-center gap-4 mb-3">
+        <div class="contact-icon">
+          <i class="fab fa-github text-blue-400"></i>
+        </div>
+        <h4 class="font-semibold text-gray-200">GitHub</h4>
+      </div>
+      <p class="text-gray-400 ml-16">Eduardo Chaparro</p>
+    </a>
+  </div>
+
+</div>
+
                 
                 <!-- Call to Action -->
                 <div class="text-center">
